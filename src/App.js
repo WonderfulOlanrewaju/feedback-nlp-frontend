@@ -1,25 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {MDBBox} from 'mdbreact';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <MDBBox display='flex' alignSelf='center'>
+        MDB React Added to the project
+      </MDBBox>
+      <MDBBox display="flex" justifyContent="end">
+        d-flex justify-content-end
+      </MDBBox>
+    </React.Fragment>
   );
 }
 
