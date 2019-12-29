@@ -1,14 +1,14 @@
 @tailwind base;
-.Left-Div {
+/* .Left-Div {
     top: 0px;
     left: 0px;
     width: 830px;
     height: 1080px;
     background: #FFDF80 0% 0% no-repeat padding-box;
     opacity: 1;
-}
+} */
 
-.Feedback-Icon {
+/* .Feedback-Icon {
     top: 200px;
     left: 130px;
     width: 357px;
@@ -37,7 +37,7 @@
     letter-spacing: 0;
     color: #000000;
     opacity: 1;
-}
+} */
 @tailwind components;
 @tailwind utilities;
 

@@ -1,6 +1,12 @@
 import React from 'react';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Formik, Form, Field} from 'formik';
 import * as Yup from "yup";
+import styled from 'styled-components';
+
+const Err = styled.div`
+    text-align : center;
+    color: palevioletred;
+`
 
 const SignupSchema = Yup.object().shape({
     name: Yup.string()
@@ -32,16 +38,25 @@ export  const FeedbackForm = ()=> (
              {
                  ({errors, touched})=> (
                     <Form>
-                        <Field name='name'/>
-                            {errors.name && touched.name ? (<div>{errors.name}</div>) : null}
-                            <ErrorMessage name='name'/>
-                        <Field name='location'/>
-                            {errors.location&& touched.location? (<div>{errors.location}</div>) : null}
-                            <ErrorMessage name='location'/>
-                        <Field name='feedback'/>
-                            {errors.feedback && touched.feedback ? (<div>{errors.feedback}</div>) : null}
-                            <ErrorMessage name='feedback'/>
-                        <button type='submit'>Submit Feedback</button>
+                        <div>
+                            <label htmlFor='name'>Name</label>
+                            <Field name='name' placeholder='your name here...'/>
+                            {errors.name && touched.name ? (<Err>{errors.name}</Err>) : null}
+                            {/* <ErrorMessage component={Err} name='name'/> */}
+                        </div>
+                       <div>
+                        <label htmlFor='location'>Location</label>
+                            <Field name='location' placeholder='let us know your location' />
+                            {errors.location&& touched.location? (<Err>{errors.location}</Err>) : null}
+                            {/* <ErrorMessage component={Err} name='location'/> */}
+                       </div>
+                        <div>
+                            <label htmlFor='feedback'>Your Feedback</label>
+                            <Field name='feedback' placeholder='We are listening...'/>
+                            {errors.feedback && touched.feedback ? (<Err>{errors.feedback}</Err>) : null}
+                            {/* <ErrorMessage  name='feedback'/> */}
+                        </div>      
+                        <button className='btn bg-orange-600' type='submit'>Submit Feedback</button>
                     </Form>
                  )
              }
