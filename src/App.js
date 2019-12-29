@@ -1,7 +1,7 @@
 import React from 'react';
 import './output.css';
 import Feedbackicon from './feedback.svg';  
-import {Form, Formik} from 'formik';
+import {FeedbackForm} from './components/Form.js';
 
 function App() {
   return (
@@ -18,9 +18,7 @@ function App() {
           </div>
         </div>
         <div>
-            <Formik>
-
-            </Formik>
+          <FeedbackForm/>
         </div>
       </div>
     </React.Fragment>
