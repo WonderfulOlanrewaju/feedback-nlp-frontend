@@ -641,6 +641,8 @@ video {
 
 .container {
   width: 100%;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 @media (min-width: 640px) {

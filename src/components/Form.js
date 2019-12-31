@@ -6,6 +6,7 @@ import styled from 'styled-components';
 const Err = styled.div`
     text-align : center;
     color: palevioletred;
+    display:block;
 `
 
 const SignupSchema = Yup.object().shape({
@@ -19,7 +20,7 @@ const SignupSchema = Yup.object().shape({
       .required('Location is a Required Field'),
     feedback: Yup.string()
       .min(50, 'Tell us more, we want to hear more from you.')
-      .required('Required'),
+      .required('We want to hear from you.'),
   });
 
 export  const FeedbackForm = ()=> (
