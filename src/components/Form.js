@@ -39,7 +39,7 @@ export  const FeedbackForm = ()=> (
              {
                  ({errors, touched})=> (
                     <Form >
-                        <div className='md:flex md-items-center mb-6'>
+                        <div className='md:flex md-items-center mb-6 min-w-0'>
                           <div className='md:w-1/3'>
                             <label htmlFor='name' className='block pt-2  mb-1 md:mb-0 pr-4'>Name</label>
                           </div>
