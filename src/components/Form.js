@@ -40,8 +40,8 @@ export  const FeedbackForm = ()=> (
                  ({errors, touched})=> (
                     <Form >
                         <div>
-                            <label htmlFor='name'>Name</label>
-                            <Field name='name' className= "w-2/5 bg-teal-100 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 inline w-full "  placeholder='Full name'/>
+                            <label htmlFor='name' className='inline-block '>Name</label>
+                            <Field name='name' className= "inline-block w-2/5 bg-teal-100 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 inline w-full "  placeholder='Full name'/>
                             {errors.name && touched.name ? (<Err>{errors.name}</Err>) : null}
                             {/* <ErrorMessage component={Err} name='name'/> */}
                         </div>
