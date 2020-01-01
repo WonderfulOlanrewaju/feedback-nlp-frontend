@@ -74,7 +74,7 @@ export  const FeedbackForm = ()=> (
                           </div>
                         </div>
                         <div className='my-5 flex justify-end'>
-                          <button className='rounded bg-red-300 text-sm p-2 self-end' type='submit'>Submit Feedback</button>
+                          <button className='rounded bg-red-300 text-sm text-white p-2 self-end' type='submit'>Submit Feedback</button>
                         </div>      
                     </Form>
                  )
