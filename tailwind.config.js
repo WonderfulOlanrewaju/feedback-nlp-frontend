@@ -2,7 +2,7 @@
 module.exports = {
     theme: {
       container: {
-        padding: '2rem',
+        padding: '5rem',
       },
     },
   }
