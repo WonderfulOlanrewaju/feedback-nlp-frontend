@@ -41,19 +41,19 @@ export  const FeedbackForm = ()=> (
                     <Form >
                         <div>
                             <label htmlFor='name' className='inline-block '>Name</label>
-                            <Field name='name' className= "inline-block w-2/5 bg-teal-100 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 inline w-full "  placeholder='Full name'/>
+                            <Field name='name' className= "placeholder-red-300 inline-block w-2/5 bg-teal-100 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 inline w-full "  placeholder='Full name'/>
                             {errors.name && touched.name ? (<Err>{errors.name}</Err>) : null}
                             {/* <ErrorMessage component={Err} name='name'/> */}
                         </div>
                        <div className='my-5'>
                         <label htmlFor='location'>Location</label>
-                            <Field name='location' placeholder='let us know your location'  className= "w-2/5 bg-teal-100 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 inline w-full " />
+                            <Field name='location' placeholder='let us know your location'  className= "placeholder-red-300 w-2/5 bg-teal-100 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 inline w-full " />
                             {errors.location&& touched.location? (<Err>{errors.location}</Err>) : null}
                             {/* <ErrorMessage component={Err} name='location'/> */}
                        </div>
                         <div className='my-5'>
                             <label htmlFor='feedback'>Your Feedback</label>
-                            <Field name='feedback' placeholder='We are listening...' className= "w-2/5 bg-teal-100 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 inline w-full "/>
+                            <Field name='feedback' placeholder='We are listening...' className= "w-2/5 placeholder-red-300 bg-teal-100 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 inline w-full "/>
                             {errors.feedback && touched.feedback ? (<Err>{errors.feedback}</Err>) : null}
                             {/* <ErrorMessage  name='feedback'/> */}
                         </div>

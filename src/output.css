@@ -599,53 +599,8 @@ video {
   height: auto;
 }
 
-/* .Left-Div {
-    top: 0px;
-    left: 0px;
-    width: 830px;
-    height: 1080px;
-    background: #FFDF80 0% 0% no-repeat padding-box;
-    opacity: 1;
-} */
-
-/* .Feedback-Icon {
-    top: 200px;
-    left: 130px;
-    width: 357px;
-    height: 336px;
-    opacity: 1;
-}
-
-.Feedback-Lead {
-    top: 619px;
-    left: 130px;
-    width: 630px;
-    height: 60px;
-    font: Semibold 45px/60px Segoe UI;
-    letter-spacing: 0;
-    color: #000000;
-    opacity: 1;
-}
-
-.Feedback-Logo {
-    top: 29px;
-    left: 49px;
-    width: 226px;
-    height: 53px;
-    text-align: left;
-    font: Bold 40px/53px Segoe UI;
-    letter-spacing: 0;
-    color: #000000;
-    opacity: 1;
-} */
-
 .container {
   width: 100%;
-<<<<<<< HEAD
-  padding-right: 5rem;
-  padding-left: 5rem;
-=======
->>>>>>> c9ac94537bd60dd0e2a49c6b057802bcb1478780
 }
 
 @media (min-width: 640px) {
@@ -54479,5 +54434,3 @@ video {
     z-index: auto;
   }
 }
-
-
