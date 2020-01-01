@@ -19,24 +19,21 @@ import {FeedbackForm} from './components/Form.js';
 
 function App() {
   return (
-    <div>
-      <div className='flex'>
-        <div className='w-2/5 bg-yellow-400 py-20 px-20 m-0'>
-          <div className='mx-auto'>
-            <div className=''>Feedback.io</div>
+      <div className='flex h-screen'>
+        <div className='w-2/5 bg-yellow-400 px-20'>
+          <div className=''>
+            <div className='mt-10'>Feedback.io</div>
             <div className='mt-20 mb-10 '>            
               <img width={200} src={Feedbackicon} alt='Feedback icon' />
             </div>
-            <div className='mb-5'>We would love your feedback.</div>
-            <p className='mb-50'>It should only take a couple of minute to fill in your feedbacks.</p>
+            <div className='mb-5 text-center'>We would love your feedback.</div>
+            <p className='mb-50 text-center'>It should only take a couple of minute to fill in your feedbacks.</p>
           </div>
         </div>
-        <div className='w-3/5 p-20 m-auto'>
+        <div className='w-3/5 m-auto px-40'>
           <FeedbackForm/>
         </div>
-      </div>
-    </div>
-      
+      </div>      
   );
 }
 

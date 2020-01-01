@@ -2,6 +2,7 @@
 module.exports = {
     theme: {
       container: {
+        marginBottom : '0'
       },
     },
   }
