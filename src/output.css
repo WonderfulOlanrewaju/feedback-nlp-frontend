@@ -641,8 +641,11 @@ video {
 
 .container {
   width: 100%;
+<<<<<<< HEAD
   padding-right: 5rem;
   padding-left: 5rem;
+=======
+>>>>>>> c9ac94537bd60dd0e2a49c6b057802bcb1478780
 }
 
 @media (min-width: 640px) {
