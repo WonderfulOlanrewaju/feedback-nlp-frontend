@@ -23,7 +23,7 @@ function App() {
         <div className='w-2/5 bg-yellow-400 px-20'>
           <div className='pt-10'>
             <div className='m-10 text-xl font-extrabold text-3xl'>FeedBack.io</div>
-            <div className='mt-32 ml-10'>            
+            <div className='mt-40 mb-10 ml-10'>            
               <img width={200} src={Feedbackicon} alt='Feedback icon' />
             </div>
             <div className='mx-10 mb-5 mt-10 text-3xl'>We Would Love Your Feedback.</div>
