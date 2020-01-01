@@ -39,23 +39,36 @@ export  const FeedbackForm = ()=> (
              {
                  ({errors, touched})=> (
                     <Form >
-                        <div>
-                            <label htmlFor='name' className='inline-block '>Name</label>
+                        <div className='md:flex md-items-center mb-6'>
+                          <div className='md:w-1/3'>
+                            <label htmlFor='name' className='block pt-2  mb-1 md:mb-0 pr-4'>Name</label>
+                          </div>
+                          <div className='md:w-2/3'>
                             <Field name='name' className= "placeholder-red-300 inline-block w-2/5 bg-teal-100 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 inline w-full "  placeholder='Full name'/>
                             {errors.name && touched.name ? (<Err>{errors.name}</Err>) : null}
                             {/* <ErrorMessage component={Err} name='name'/> */}
+                          </div>
                         </div>
                        <div className='my-5'>
-                        <label htmlFor='location'>Location</label>
-                            <Field name='location' placeholder='let us know your location'  className= "placeholder-red-300 w-2/5 bg-teal-100 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 inline w-full " />
-                            {errors.location&& touched.location? (<Err>{errors.location}</Err>) : null}
-                            {/* <ErrorMessage component={Err} name='location'/> */}
+                         <div className='md:w-1/3'>
+                          <label htmlFor='location' className='block pt-2  mb-1 md:mb-0 pr-4'>Location</label>
+                         </div>
+                         <div className='md:w-2/3'>
+                          <Field name='location' placeholder='let us know your location'  className= "placeholder-red-300 w-2/5 bg-teal-100 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 inline w-full " />
+                          {errors.location&& touched.location? (<Err>{errors.location}</Err>) : null}
+                          {/* <ErrorMessage component={Err} name='location'/> */}
+                         </div>
+                            
                        </div>
                         <div className='my-5'>
-                            <label htmlFor='feedback'>Your Feedback</label>
+                          <div className='md:w-1/3'>
+                            <label htmlFor='feedback' className='block pt-2  mb-1 md:mb-0 pr-4'>Your Feedback</label>
+                          </div>
+                          <div className='md:w-2/3'>
                             <Field name='feedback' placeholder='We are listening...' className= "w-2/5 placeholder-red-300 bg-teal-100 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 inline w-full "/>
                             {errors.feedback && touched.feedback ? (<Err>{errors.feedback}</Err>) : null}
                             {/* <ErrorMessage  name='feedback'/> */}
+                          </div>
                         </div>
                         <div className='my-5 flex justify-end'>
                           <button className='rounded bg-red-300 text-sm p-2 self-end' type='submit'>Submit Feedback</button>
