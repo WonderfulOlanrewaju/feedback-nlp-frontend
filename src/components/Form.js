@@ -9,12 +9,6 @@ const Err = styled.div`
     display:block;
 `
 
-const styles = { 
-  form : {
-    width: "25%",
-  }
-}
-
 const SignupSchema = Yup.object().shape({
     name: Yup.string()
       .min(2, 'Too short! Name cannot be less than three characters')
@@ -44,27 +38,27 @@ export  const FeedbackForm = ()=> (
          >
              {
                  ({errors, touched})=> (
-                    <Form className={styles.form}>
+                    <Form >
                         <div>
                             <label htmlFor='name'>Name</label>
-                            <Field name='name' className= "bg-teal-100 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 inline w-full "  placeholder='Full name'/>
+                            <Field name='name' className= "w-2/5 bg-teal-100 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 inline w-full "  placeholder='Full name'/>
                             {errors.name && touched.name ? (<Err>{errors.name}</Err>) : null}
                             {/* <ErrorMessage component={Err} name='name'/> */}
                         </div>
-                       <div className='my-4'>
+                       <div className='my-5'>
                         <label htmlFor='location'>Location</label>
-                            <Field name='location' placeholder='let us know your location'  className= "bg-teal-100 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 inline w-full " />
+                            <Field name='location' placeholder='let us know your location'  className= "w-2/5 bg-teal-100 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 inline w-full " />
                             {errors.location&& touched.location? (<Err>{errors.location}</Err>) : null}
                             {/* <ErrorMessage component={Err} name='location'/> */}
                        </div>
-                        <div className='my-4'>
+                        <div className='my-5'>
                             <label htmlFor='feedback'>Your Feedback</label>
-                            <Field name='feedback' placeholder='We are listening...' className= "bg-teal-100 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 inline w-full "/>
+                            <Field name='feedback' placeholder='We are listening...' className= "w-2/5 bg-teal-100 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 inline w-full "/>
                             {errors.feedback && touched.feedback ? (<Err>{errors.feedback}</Err>) : null}
                             {/* <ErrorMessage  name='feedback'/> */}
                         </div>
-                        <div className='my-4'>
-                          <button className='rounded bg-red-300 text-sm p-2' type='submit'>Submit Feedback</button>
+                        <div className='my-5 flex justify-end'>
+                          <button className='rounded bg-red-300 text-sm p-2 self-end' type='submit'>Submit Feedback</button>
                         </div>      
                     </Form>
                  )
