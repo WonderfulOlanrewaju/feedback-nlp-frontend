@@ -1,3 +1,7 @@
 @tailwind base;
+input::placeholder, select, textarea::placeholder {
+    @apply italic
+}
+
 @tailwind components;
 @tailwind utilities;

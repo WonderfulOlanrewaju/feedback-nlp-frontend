@@ -599,6 +599,26 @@ video {
   height: auto;
 }
 
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  font-style: italic
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  font-style: italic
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  font-style: italic
+}
+
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  font-style: italic
+}
+
+input::placeholder, select, textarea::placeholder {
+  font-style: italic
+}
+
 .container {
   width: 100%;
 }

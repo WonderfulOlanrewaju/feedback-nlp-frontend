@@ -38,7 +38,7 @@ export  const FeedbackForm = ()=> (
          >
              {
                  ({errors, touched})=> (
-                    <Form >
+                    <Form  className='pl-5 w-10/12'>
                         <div className='md:flex md-items-center mb-6 min-w-0'>
                           <div className='md:w-1/3'>
                             <label htmlFor='name' className='block pt-2  mb-1 md:mb-0 pr-4'>Name</label>
@@ -69,7 +69,7 @@ export  const FeedbackForm = ()=> (
                             <label htmlFor='feedback' className='block pt-2  mb-1 md:mb-0 pr-4'>Your Feedback</label>
                           </div>
                           <div className='md:w-2/3'>
-                            <Field name='feedback' placeholder='We are listening...' className= "w-2/5 placeholder-red-300 bg-teal-100 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 inline w-full "/>
+                            <Field name='feedback' as='textarea' placeholder='We are listening...' className= "w-2/5 placeholder-red-300 bg-teal-100 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 inline w-full "/>
                             {errors.feedback && touched.feedback ? (<Err>{errors.feedback}</Err>) : null}
                           </div>
                         </div>
