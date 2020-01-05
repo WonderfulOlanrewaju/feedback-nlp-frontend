@@ -51,8 +51,11 @@ export function Auth () {
                 ({errors, touched})=> (
                   <Form className='w-1/2 bg-white Auth-Form my-auto'>
                     <div className= 'bg-gray-300 mb-5 h-24'>
-                      <div className='uppercase'>Home</div>
-                      <div className='uppercase'>SignUp</div>
+                      <div className='p-10'>
+                        <div className='uppercase'>Home</div>
+                        <div className='uppercase content-end'>SignUp</div>
+                      </div>
+
                     </div>
                     <div className='p-10'>
                       <div >
