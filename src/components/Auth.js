@@ -27,8 +27,8 @@ export function Auth () {
             <div className='text-3xl font-semibold text-white'><Link to='/'>FeedBack.io</Link></div>
             <img className='px-20 pt-20 pb-5 mx-auto'  src ={Welcome} alt='Welcome icon...'/>
             <div className=''>
-              <div className='text-3xl text-white mb-5 text-center mr-40'>Welcome Back!</div>
-              <div className='text-white text-center mr-48' >There are feedbacks waiting for you ...</div>
+              <div className='text-3xl text-white mb-5 text-center'>Welcome Back!</div>
+              <div className='text-white text-center' >There are feedbacks waiting for you ...</div>
             </div>
         </div>
         <div className='Auth-Div w-3/5 p-20 flex justify-center'>
