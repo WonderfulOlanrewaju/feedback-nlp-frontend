@@ -8,8 +8,7 @@ const Err = styled.div`
     color: palevioletred;
     display:block;
 `
-
-const SignupSchema = Yup.object().shape({
+const FeedBackSchema = Yup.object().shape({
     name: Yup.string()
       .min(2, 'Too short! Name cannot be less than three characters')
       .max(70, 'Too Long! Name cannot be longer than seventy characters')
@@ -31,7 +30,7 @@ export  const FeedbackForm = ()=> (
             location: '',
             feedback: ''
           }}
-          validationSchema={SignupSchema}
+          validationSchema={FeedBackSchema}
           onSubmit={values => {
             console.log(values);
           }}

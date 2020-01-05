@@ -3,5 +3,15 @@ input::placeholder, select, textarea::placeholder {
     @apply italic
 }
 
+.Welcome-Div {
+    background: #FFDF80 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.Auth-Div {
+    background: #FFDF80 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
 @tailwind components;
 @tailwind utilities;
