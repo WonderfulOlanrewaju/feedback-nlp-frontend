@@ -3,6 +3,7 @@ import Welcome from '../auth-welcome.svg';
 import {Field, Form, Formik} from 'formik';
 import * as Yup from "yup";
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
 const Err = styled.div`
     text-align : left;
@@ -22,16 +23,20 @@ const AuthSchema = Yup.object().shape({
   });
 
 
-export const Auth = ()=> (
-    <div>
-        <div className='Welcome-Div w-1/2'>
-            <div>FeedBack.io</div>
-            <img src ={Welcome} alt='Welcome icon...'/>
-            <div>Welcome Back!</div>
-           <div>There are feedbacks waiting for you</div>
+// export const Auth = ()=> (
+export function Auth () { 
+  return (
+    <div class='flex h-screen'>
+        <div className='Welcome-Div w-2/5 p-20'>
+            <div className='text-3xl font-semibold text-white'><Link to='/'>FeedBack.io</Link></div>
+            <img className='px-20 pt-20 pb-5 mx-auto'  src ={Welcome} alt='Welcome icon...'/>
+            <div className=''>
+              <div className='text-3xl text-white mb-5 text-center mr-40'>Welcome Back!</div>
+              <div className='text-white text-center mr-48' >There are feedbacks waiting for you ...</div>
+            </div>
         </div>
-        <div className='Auth-Div w-1/2'>
-            <Formik
+        <div className='Auth-Div w-3/5 p-20 flex justify-center'>
+            <Formik className='w-1/2 bg-white'
             initialValues={{
                 username: '',
                 email: '',
@@ -44,22 +49,38 @@ export const Auth = ()=> (
             >
               {
                 ({errors, touched})=> (
-                  <Form className='w-10/12'>
-                    <div>
-                      <label htmlFor='email'>Email</label>
-                      <Field name='username'></Field>
-                      {errors.username && touched.username ? <Err>{errors.username}</Err> : null}
+                  <Form className='w-1/2 bg-white Auth-Form my-auto'>
+                    <div className= 'bg-gray-300 mb-5 h-24'>
+                      <div className='uppercase'>Home</div>
+                      <div className='uppercase'>SignUp</div>
                     </div>
-                    <div>
-                      <label htmlFor='password'>Password</label>
-                      <Field name='password'></Field>
-                      {errors.password && touched.password ? <Err>{errors.password}</Err> : null}
+                    <div className='p-10'>
+                      <div >
+                        <div>
+                          <label htmlFor='email'>Email</label>
+                        </div>
+                        <div>
+                        <Field className='w-full p-2' name='username'></Field>
+                        {errors.username && touched.username ? <Err>{errors.username}</Err> : null}
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <label htmlFor='password'>Password</label>
+                        </div>
+                        <div>
+                          <Field className='w-full p-2' name='password'></Field>
+                          {errors.password && touched.password ? <Err>{errors.password}</Err> : null}
+                        </div>
+                      </div>
+                      <div className='flex justify-center'>
+                        <button className='Auth-Button mt-10 p-2'>SIGN IN</button>
+                      </div>
                     </div>
-
                   </Form>
                 )
               }
             </Formik>
         </div>
     </div>
-)
+)}
