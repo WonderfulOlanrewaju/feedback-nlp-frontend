@@ -619,10 +619,6 @@ input::placeholder, select, textarea::placeholder {
   font-style: italic
 }
 
-input {
-  background: #E9F2F5 0% 0% no-repeat padding-box;
-}
-
 .Welcome-Div {
   background: #4B437C 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
@@ -639,7 +635,7 @@ input {
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 10px;
   opacity: 1;
-  height: 426px;
+  height: 526px;
 }
 
 .Auth-Button {
@@ -648,6 +644,14 @@ input {
   opacity: 1;
   width: 194px;
   height: 62px;
+}
+
+.Auth-Field {
+  width: 448px;
+  height: 54px;
+  background: #E9F2F5 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  opacity: 1;
 }
 
 .container {

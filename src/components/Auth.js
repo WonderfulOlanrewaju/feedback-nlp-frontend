@@ -49,35 +49,35 @@ export function Auth () {
             >
               {
                 ({errors, touched})=> (
-                  <Form className='w-1/2 bg-white Auth-Form my-auto'>
+                  <Form className='w-3/6 bg-white Auth-Form my-auto'>
                     <div className= 'bg-gray-300 mb-5 h-24'>
-                      <div className='p-10'>
-                        <div className='uppercase'>Home</div>
-                        <div className='uppercase content-end'>SignUp</div>
+                      <div className='p-10 flex '>
+                        <div className='uppercase self-start'> {'<'} Home</div>
+                        <div className='uppercase self-end mr-0'>SignUp</div>
                       </div>
 
                     </div>
                     <div className='p-10'>
                       <div >
-                        <div>
+                        <div className='mb-5' >
                           <label htmlFor='email'>Email</label>
                         </div>
                         <div>
-                        <Field className='w-full p-2' name='username'></Field>
+                        <Field className='Auth-Field w-full p-2' name='username'></Field>
                         {errors.username && touched.username ? <Err>{errors.username}</Err> : null}
                         </div>
                       </div>
                       <div>
-                        <div>
+                        <div className='my-5' >
                           <label htmlFor='password'>Password</label>
                         </div>
                         <div>
-                          <Field className='w-full p-2' name='password'></Field>
+                          <Field className='Auth-Field w-full p-2' name='password'></Field>
                           {errors.password && touched.password ? <Err>{errors.password}</Err> : null}
                         </div>
                       </div>
                       <div className='flex justify-center'>
-                        <button className='Auth-Button mt-10 p-2'>SIGN IN</button>
+                        <button className='mt-5 text-white button-small Auth-Button p-2'>SIGN IN</button>
                       </div>
                     </div>
                   </Form>
