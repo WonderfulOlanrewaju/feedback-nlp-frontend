@@ -22,7 +22,7 @@ const AuthSchema = Yup.object().shape({
 // export const Auth = ()=> (
 export function Auth () { 
   return (
-    <div class='flex h-screen'>
+    <div className='flex h-screen'>
         <div className='Welcome-Div w-2/5 p-20'>
             <div className='text-3xl font-semibold text-white'><Link to='/'>FeedBack.io</Link></div>
             <img className='px-20 pt-20 pb-5 mx-auto'  src ={Welcome} alt='Welcome icon...'/>
