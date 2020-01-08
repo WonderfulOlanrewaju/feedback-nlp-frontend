@@ -61,7 +61,16 @@ export function Admin () {
                     </div>
                     </div>
                     <div>
-                        <CustomPaginationActionsTable/>
+                        <div>
+                            <div className='w-3/5'>
+                                <CustomPaginationActionsTable  />
+                            </div>
+                            <div className='w-2/5'> 
+                                <div>
+                                    Hate, Love
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
