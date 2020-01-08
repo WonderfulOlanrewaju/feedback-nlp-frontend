@@ -9,6 +9,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "formik": "^2.0.8",
+    "framer-motion": "^1.7.0",
     "instyle": "^0.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
