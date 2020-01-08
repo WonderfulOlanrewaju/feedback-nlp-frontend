@@ -68,7 +68,7 @@ export  const FeedbackForm = ()=> (
                             <label htmlFor='feedback' className='block pt-2  mb-1 md:mb-0 pr-4'>Your Feedback</label>
                           </div>
                           <div className='md:w-2/3'>
-                            <Field name='feedback' as='textarea' placeholder='We are listening...' className= "w-2/5 placeholder-red-300 bg-teal-100 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 inline w-full "/>
+                            <Field name='feedback' as='textarea' placeholder='We are listening...' className= "h-40 w-2/5 placeholder-red-300 bg-teal-100 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 inline w-full "/>
                             {errors.feedback && touched.feedback ? (<Err>{errors.feedback}</Err>) : null}
                           </div>
                         </div>
