@@ -39,19 +39,19 @@ export function Admin () {
                     </Formik>
                 </div>
                 <div className='Admin-Right-Body'>
-                    <div>
-                        <FeedbackIcon/>
+                    <div className='First-Card inline-block'>
+                        <FeedbackIcon className='text-2xl' />
                         FeedBack
-                        500
+                        <span className='text-3xl '>500</span>
                         This Week
                     </div>
-                    <div>
+                    <div className='Second-Card inline-block'>
                         <FeedbackIcon/>
                         Total FeedBack
                         600
                         This Month
                     </div>
-                    <div>
+                    <div className='Third-Card inline-block'>
                         <FeedbackIcon/>
                         Total Users
                         250
