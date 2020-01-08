@@ -6,6 +6,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import FeedbackIcon from '@material-ui/icons/Feedback';
 import SettingsIcon from '@material-ui/icons/Settings';
 import SearchIcon from '@material-ui/icons/Search';
+import CustomPaginationActionsTable from './AdminTable';
 
 const Err = styled.div`
     text-align : left;
@@ -38,7 +39,8 @@ export function Admin () {
                         </Form>
                     </Formik>
                 </div>
-                <div className='Admin-Right-Body'>
+                <div className='Admin-Right-Body'>           
+                    <div>
                     <div className='First-Card inline-block'>
                         <FeedbackIcon className='text-2xl' />
                         FeedBack
@@ -56,6 +58,10 @@ export function Admin () {
                         Total Users
                         250
                         This Week
+                    </div>
+                    </div>
+                    <div>
+                        <CustomPaginationActionsTable/>
                     </div>
                 </div>
                 
