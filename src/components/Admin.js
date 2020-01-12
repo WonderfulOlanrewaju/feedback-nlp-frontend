@@ -1,18 +1,21 @@
 import React from 'react';
 import {Field, Form, Formik} from 'formik';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import HomeIcon from '@material-ui/icons/Home';
 import FeedbackIcon from '@material-ui/icons/Feedback';
 import SettingsIcon from '@material-ui/icons/Settings';
 import SearchIcon from '@material-ui/icons/Search';
 import CustomPaginationActionsTable from './AdminTable';
+import PersonIcon from '@material-ui/icons/Person';
+import MailIcon from '@material-ui/icons/Mail';
+import NotificationsIcon from '@material-ui/icons/Notifications';
 
-const Err = styled.div`
-    text-align : left;
-    color: palevioletred;
-    display:block;
-`
+// const Err = styled.div`
+//     text-align : left;
+//     color: palevioletred;
+//     display:block;
+// `
 
 export function Admin () {
     return (
@@ -32,12 +35,20 @@ export function Admin () {
             </div>
             <div className='w-4/5 p-8 Right-Admin'>
                 <div>
-                    <Formik>
-                        <Form>
-                            <SearchIcon/>
-                            <Field className='Search-Field' type='search' placeholder='Search Feedback' />     
-                        </Form>
-                    </Formik>
+                    <div>
+                        <Formik>
+                            <Form>
+                                <SearchIcon/>
+                                <Field className='Search-Field' type='search' placeholder='Search Feedback' />     
+                            </Form>
+                        </Formik>
+                    </div>
+                   
+                    <div>
+                        <PersonIcon/>
+                        <MailIcon/>
+                        <NotificationsIcon/>
+                    </div>
                 </div>
                 <div className='Admin-Right-Body'>           
                     <div>

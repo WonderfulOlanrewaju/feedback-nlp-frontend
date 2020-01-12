@@ -5,4 +5,8 @@ module.exports = {
         marginBottom : '0'
       }
     },
+    variants :{
+      backgroundColor : ['responsive', 'hover', 'focus', 'active']
+    },
+    plugins : []
   }
