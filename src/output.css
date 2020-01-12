@@ -685,24 +685,24 @@ input::placeholder, select, textarea::placeholder {
 }
 
 .First-Card{
-  width: 271px;
-  height: 219px;
+  width: 220px;
+  height: 220px;
   background: #4BD3F9 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   opacity: 1;
 }
 
 .Second-Card {
-  width: 271px;
-  height: 219px;
+  width: 220px;
+  height: 220px;
   background: #6988E5 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   opacity: 1;
 }
 
 .Third-Card {
-  width: 271px;
-  height: 219px;
+  width: 220px;
+  height: 220px;
   background: #F39FAF 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   opacity: 1;

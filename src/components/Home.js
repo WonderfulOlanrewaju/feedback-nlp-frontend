@@ -19,6 +19,7 @@ export function Home () {
         <div className='w-3/5 m-auto px-40'>
           <FeedbackForm/>
         </div>
+        
       </div>      
   );
 }

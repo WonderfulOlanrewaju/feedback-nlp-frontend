@@ -2,6 +2,7 @@ import React from 'react';
 import { Formik, Form, Field} from 'formik';
 import * as Yup from "yup";
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
 const Err = styled.div`
     text-align : left;
@@ -73,8 +74,14 @@ export  const FeedbackForm = ()=> (
                           </div>
                         </div>
                         <div className='my-5 flex justify-end'>
-                          <button className='rounded bg-red-400 shadow-lg hover:bg-red-500 focus:outline-none text-sm text-white p-2 self-end' type='submit'>Submit Feedback</button>
-                        </div>      
+                            <button className='rounded block bg-red-400 shadow-lg hover:bg-red-500 focus:outline-none text-sm text-white p-2 self-end' type='submit'>Submit Feedback</button>
+                        </div>  
+                        <div className='flex justify-end text-sm'>
+                          Are you a business owner? 
+                          <Link className='ml-4 text-red-400' to='/auth'> Sign In.</Link> 
+                        </div>
+
+    
                     </Form>
                  )
              }
